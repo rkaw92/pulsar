@@ -80,7 +80,7 @@ A cluster consists of 3 broker nodes, 3 bookie nodes, and 3 ZooKeeper nodes. The
    Component | CPU|Memory|Storage|Throughput |Rate
    |---|---|---|---|---|---
    Broker|0.2|256 MB|/|Write throughput: 3 MB/s<br /><br />Read throughput: 6 MB/s<br /><br />|Write rate: 350 entries/s<br /><br />Read rate: 650 entries/s
-   Bookie|0.2|256 MB|Journal: 8 GB<br /><br />PD-SSDLedger: 16 GB, PD-STANDARD|Write throughput: 2 MB/s<br /><br />Read throughput: 2 MB/s<br /><br />|Write rate: 200 entries/s<br /><br />Read rate: 200 entries/s
+   Bookie|0.2|256 MB|Journal: 8 GB, PD-SSD<br />Ledger: 16 GB, PD-STANDARD|Write throughput: 2 MB/s<br /><br />Read throughput: 2 MB/s<br /><br />|Write rate: 200 entries/s<br /><br />Read rate: 200 entries/s
    ZooKeeper|0.05|256 MB|Log: 8 GB, PD-SSD<br /><br />Data: 2 GB, PD-STANDARD|/|/
 
 - The recommended hardware settings (**1000 Pulsar topics**)
@@ -88,7 +88,7 @@ A cluster consists of 3 broker nodes, 3 bookie nodes, and 3 ZooKeeper nodes. The
    Component | CPU|Memory|Storage|Throughput |Rate
    |---|---|---|---|---|---
    Broker|8|8 GB|/|Write throughput: 100 MB/s<br /><br />Read throughput: 200 MB/s<br /><br />|Write rate: 10,000 entries/s<br /><br />Read rate: 20,000 entries/s
-   Bookie|4|8GB|Journal: 256 GB<br /><br />PD-SSDLedger: 2 TB, PD-STANDARD|Write throughput: 75 MB/s<br /><br />Read throughput: 75 MB/s<br /><br />|Write rate: 7,500 entries/s<br /><br />Read rate: 7,500 entries/s
+   Bookie|4|8GB|Journal: 256 GB, PD-SSD<br />Ledger: 2 TB, PD-STANDARD|Write throughput: 75 MB/s<br /><br />Read throughput: 75 MB/s<br /><br />|Write rate: 7,500 entries/s<br /><br />Read rate: 7,500 entries/s
    ZooKeeper|1|2 GB|Log: 64 GB, PD-SSD<br /><br />Data: 256 GB, PD-STANDARD|/|/
 
 ## Install the Pulsar binary package
